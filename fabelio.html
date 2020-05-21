@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="icon" href="static/favicon.png?v=4">
+    <title>Nabila Ayu Design</title>
+</head>
+
+<body>
+    <!-- [LIGHTBOX CONTAINER] -->
+    <div id="lb-back">
+        <div id="lb-img"></div>
+    </div>
+    <div id="nav" class="sticky-top">
+        <nav class="navbar navbar-light navbar-expand justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="static/logo.png" height="70" alt="">
+            </a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">WORKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>fabelio</h1>
+        <div class="title-desc">Case Study</div><br>
+        <p class="desc">This was a technical test done for an internship role at Fabelio</p><br>
+        <h3>1 – Choosing People Problem</h3><br>
+        <p>
+            For this test, I was provided 3 cases to choose from. That is: <br><br>
+        <ol>
+            <li>Improve the the UX of the email subscription process.</li>
+            <li>Revamp Fabelio’s “order saya” page.</li>
+            <li>Build tracking order without login feature.</li>
+        </ol>
+        </p><br>
+        <p>
+            In order to decide which issue to solve, I wanted to understand the user’s experience.
+            Therefore, I decided to interview 5 individuals on their experiences with e-commerce web apps.
+            What I want to know is: Provided with those 3 cases, which one would be the most impactful in
+            increasing their social interaction with a furniture e-commerce platform. And this is what I
+            got:
+        </p><br>
+        <div class="survey">
+            <p>
+                <i>
+                    <b>80%</b> of the interviewees said <b>tracking order without login</b> would increase
+                    their
+                    interaction, as an easier way to track the delivery status of their orders.
+                </i>
+            </p><br>
+            <p>
+                <i>
+                    <b>20%</b> of the interviewees said <b>email subscription</b> would increase their
+                    Interaction because of convenience in time of need.
+                </i>
+            </p><br>
+        </div>
+        <p>
+            Then I delved into reading about Fabelio’s philosophy. They value the ease and comfort of their
+            customers, along with their ability on being transparent. Therefore I decided to work on issue
+            point 3—Build tracking order without login feature, because easing one of the customer’s
+            anxieties is crucial in order to achieve Fabelio’s company goals in the long run. To see an even
+            bigger picture, according to <a href="https://www.shopify.co.id/blog/common-shipping-questions">this</a>
+            article nearly 90%
+            of the customers surveyed said they track
+            the delivery status of their orders.
+        </p> <br><br>
+        <h3>2 – Ideate</h3><br>
+        <p>
+            Of course what I am dealing with now is how do I build a tracking order feature without login,
+            while still keeping the customer’s privacy and security. During the previous interview, 2 of
+            them mentioned about tracking numbers. They said that a tracking order without login feature
+            would be like checking delivery status using a tracking number on a courier website. Simple and
+            easy. Moreover, they are already familiar with that user flow when ordering online.
+        </p><br>
+        <b>Primary solution: Tracking numbers</b><br> <br>
+        <p>
+            Instead of adding a new attribute like a traditional tracking number, using order number as
+            tracking number seems easier to implement. I noticed while I was brainstorming, that Fabelio
+            already have a <b>purchase without signup</b> feature. Then how do they contact their customers?
+            Through email and Whatsapp. So now, I have a contact channel for every purchasing customer on
+            Fabelio whether they signed up or not.
+        </p><br>
+        <b>Traditional Flow (tracking order only with login)</b><br><br>
+        <img src="static/fabelio/Flow.png" alt=""><br><br>
+        <b>Proposed Flow</b><br><br>
+        <img src="static/fabelio/Flow-new.png" alt=""><br><br><br><br>
+        <h3>3 – Design Solution</h3><br>
+        <img src="static/fabelio/Wireframe.png" class="zoomD" alt=""><br><br>
+        <p>View it on Figma <a
+                href="https://www.figma.com/file/ijmSQqcAJBVmpnWaU14CRP/Fabelio---Tracking-order-without-login?node-id=0%3A1">here</a>.
+        </p>
+        <p>
+            I went through some iteration of design solutions, and the wireframe above is the final version.
+            I wanted the login form and the tracking order form to be displayed on the same page so that the
+            users can find this feature faster. Also those two features being on the same page emphasize
+            that users can track their orders without logging in first.
+        </p>
+    </div>
+    <footer>
+        <div class="contacts">
+            <a href="https://www.linkedin.com/in/nabilaayu/" target="_blank">LINKEDIN</a>
+            <div>•</div>
+            <a href="https://www.behance.net/nabilaayu" target="_blank">BEHANCE</a>
+        </div>
+        <div>© 2020 Nabila Ayu Dewanti</div>
+    </footer>
+</body>
+
+</html>

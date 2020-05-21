@@ -4,6 +4,8 @@ var zoomImg = function () {
     var clone = this.cloneNode();
     clone.classList.remove("zoomD");
 
+    document.getElementById("nav").classList.remove("sticky-top");
+
     // Put evil clone into lightbox
     var lb = document.getElementById("lb-img");
     lb.innerHTML = "";
@@ -26,5 +28,6 @@ window.addEventListener("load", function () {
     // Click event to hide the lightbox
     document.getElementById("lb-back").addEventListener("click", function () {
         this.classList.remove("show");
+        document.getElementById("nav").classList.add("sticky-top");
     })
 });
