@@ -17,6 +17,15 @@ i {
     color: blue;
 }
 
+a .title {
+    color: black;
+}
+
+p a {
+    text-decoration: underline;
+    color: blue;
+}
+
 .fa-behance {
     margin: 0 10px;
 }
@@ -79,7 +88,7 @@ i {
 }
 
 .column .title, .column .title-desc {
-    display: none;
+    /* display: none; */
 }
 
 .column {
@@ -87,6 +96,19 @@ i {
     max-width: 33.33%;
     padding: 20px 20px;
     text-align: left;
+}
+
+.column a {
+    text-decoration: none;
+}
+
+.column img, .column .hvrbox {
+    transition: transform 0.4s;
+    transform: scale(1);
+}
+
+.column:hover .hvrbox {
+    transform: scale(1.025);
 }
 
 .title {
@@ -112,7 +134,7 @@ i {
 .survey {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 90%;
 }
 
 .survey p {
@@ -160,7 +182,7 @@ i {
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 255, 0.8);
+	background: rgba(255, 255, 255, 0)
 	color: white;
 	padding: 15px;
 	-moz-transition: all 0.4s ease-in-out 0s;
@@ -266,15 +288,15 @@ i {
     /* You might want to play around with 
        width, height, max-width, max-height
        to fit portrait / landscape pictures properly. */
-    width: 100%;
-    height: auto;
+    /* width: auto;
+    height: 100%; */
     cursor: -moz-zoom-out; 
     cursor: -webkit-zoom-out; 
     cursor: zoom-out;
    
-    /* ALTERNATE EXAMPLE
+    /* ALTERNATE EXAMPLE */
     width: 100%;
     max-width: 1200px;
     height: auto;
-    margin: 0 auto; */
+    margin: 0 auto;
   }
