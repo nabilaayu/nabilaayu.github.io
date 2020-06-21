@@ -10,7 +10,6 @@ footer {
     text-align: center;
     font-size: x-small;
     padding: 5% 20px 20px 20px;
-    color: gray;
 }
 
 i {
@@ -65,15 +64,19 @@ p a {
 }
 
 .contacts a {
-    color: blue;
+    color: black;
 }
 
 .nav-item {
     text-align: right;
 }
 
+.active>.nav-link {
+    color: blue !important;
+}
+
 .navbar-light .navbar-nav .nav-link {
-    color: blue;
+    color: black;
     font-size: 13px;
 }
 
