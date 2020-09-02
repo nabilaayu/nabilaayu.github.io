@@ -40,6 +40,12 @@ p a {
     width: 100%;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .content {
     margin-left: auto;
     margin-right: auto;
@@ -67,8 +73,42 @@ p a {
     color: black;
 }
 
+.full-width {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw !important;
+}
+
+.project-list {
+    text-align: center;
+}
+
+.project-list * {
+    display: inline-block;
+    font-size: 13px;
+    padding: 0 5px;
+    /* padding-bottom: 10px; */
+    color: black;
+}
+
+.navbar {
+    padding: .5rem .5rem;
+}
+
 .nav-item {
     text-align: right;
+}
+
+.navbar-nav {
+    margin-top: revert;
+}
+
+.active * {
+    color: blue !important;
 }
 
 .active>.nav-link {
@@ -98,6 +138,28 @@ p a {
     flex: 33.33%;
     max-width: 33.33%;
     padding: 20px 20px;
+    text-align: left;
+}
+
+.column2 {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 12px;
+    text-align: left;
+}
+
+.column3 {
+    flex: 88%;
+    max-width: 88%;
+    padding-left: 12px;
+    padding-right: 32px;
+    text-align: left;
+}
+
+.column4 {
+    flex: 12%;
+    max-width: 12%;
+    padding: 0 12px;
     text-align: left;
 }
 
@@ -233,6 +295,10 @@ p a {
         max-width: 50%;
     }
 
+    .column3 {
+        padding-right: 12px;
+    }
+
     .content {
         width: 100%;
     }
@@ -244,9 +310,17 @@ p a {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column, .about-column {
+    .column, .column2, .column3, .column4,.about-column {
         flex: 100%;
         max-width: 100%;
+    }
+
+    .column2, .column3, .column4 {
+        padding-bottom: 32px;
+    }
+
+    .column3 {
+        padding-right: 12px;
     }
 
     .column .title, .column .title-desc {
@@ -255,6 +329,10 @@ p a {
 
     .content {
         width: 100%;
+    }
+
+    .content .column4 img {
+        width: 20%;
     }
 
     .sticky-top {
