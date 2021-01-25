@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="icon" href="static/favicon.png?v=4">
+    <title>ConTribe | Nabila Ayu Design</title>
+</head>
+
+<body>
+    <!-- [LIGHTBOX CONTAINER] -->
+    <div id="lb-back">
+        <div id="lb-img"></div>
+    </div>
+    <div id="nav" class="sticky-top">
+        <nav class="navbar navbar-light navbar-expand justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="static/logo.png" height="40" alt="">
+            </a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">WORKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>ConTribe</h1>
+        <div style="color: #F84F45; font-weight: 500;">Student Volunteering Platform and Organizer</div><br>
+        <img src="static/contribe/hero1.png" class="center"><br><br>
+
+        <h5 style="font-weight: 700;">Design Process</h5>
+        Based on <strong>User-Centered Design Process</strong> by <a href="https://www.interaction-design.org/literature/topics/user-centered-design" target="_blank" style="color: black;">Interaction Design Foundation</a>.
+        <img src="static/contribe/process.png" class="center"><br><br>
+
+        <h5 style="font-weight: 700;">Background</h5>
+        This project was a <strong>System Interaction Class group assignment</strong>  that I took part in my fifth 
+        semester at Uni. We were given a chance to pick a specific theme to work with, in which we chose 
+        'Disaster Recovery'. We then proceeded to decide 'Student Volunteering' as our main topic.<br><br><br>
+        <div style="text-align: center;">
+            <strong style="color: grey; font-weight: 600;">Our Challenge</strong><br>
+            <strong style="color:#F84F45; font-weight: 700;">How might we provide student volunteers and organizers 
+            a platform to help them manage their time and effort effectively?</strong>
+        </div><br><br><br>
+        
+        <h5 style="font-weight: 700;">Project Goals</h5>
+        To further help define our goals, we made and analyze a couple of value proposition canvas. It occurs to us 
+        then that because our user base consists of both volunteer and organizer, <strong>we need to revolve our would-be 
+        features around their key interactions</strong>. <br><br>
+        <div class="tab">
+            <p><strong style="color: #F84F45;">Goal #1:</strong> Connect potential volunteers with existing volunteer activities. </p> 
+            <p><strong style="color: #F84F45;">Goal #2:</strong> Link the organizer with a suitable sponsor.</p>
+            <p><strong style="color: #F84F45;">Goal #3:</strong> Help maximize the number of volunteer applications.</p>
+            <p><strong style="color: #F84F45;">Goal #4:</strong> Allocate tasks clearly.</p>
+            
+        </div><br><br><br>
+
+        <h5 style="font-weight: 700;">User Research</h5>
+        In this step, we did qualitative research by <strong>interviewing 5 individuals</strong>  who fit our 
+        end-user criteria. All of them ranging from high school to university students. <br><br>
+        <img src="static/contribe/user.png" class="center"><br>
+
+        <div class="row">
+            <div class="column2">
+                <strong style="color: #F84F45; font-size:medium;">Insight #1</strong>
+                <h6 style="font-weight: 700; font-size: 18px;">Communication is key</h6>
+            </div>
+            <div class="column2">
+                <p>Communication is what makes or breaks a successful volunteer activity. <strong>It is crucial to maintain</strong>, 
+                even though there will be volunteers who do not have the confidence to do so.</p>
+                <p style="font-size: small;"><strong style="color: #F84F45;">Idea:</strong> Build a notification center where organizers could <strong>easily input and broadcast updates.</strong></p>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="column2">
+                <strong style="color: #F84F45; font-size:medium;">Insight #2</strong>
+                <h6 style="font-weight: 700; font-size: 18px;">Different schedules</h6>
+            </div>
+            <div class="column2">
+                <p>Keeping that line of <strong>communication becomes tricky when it is hard to find time</strong> 
+                in between all of the volunteers' different schedules.</p>
+                <p style="font-size: small;"><strong style="color: #F84F45;">Idea:</strong> Build a dashboard 
+                    to keep track all the coming tasks and agendas related to each activity. Organizers would need to input the time for each agenda in order to <strong>mark the availability status of the following time slot.</strong></p>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="column2">
+                <strong style="color: #F84F45; font-size:medium;">Insight #3</strong>
+                <h6 style="font-weight: 700; font-size: 18px;">Funding is challenging</h6>
+            </div>
+            <div class="column2">
+                <p>It is <strong>tough to connect with sponsors</strong>, even though many companies are willing to become one 
+                because they have social obligations.</p>
+                <p style="font-size: small;"><strong style="color: #F84F45;">Idea:</strong> Help <strong>automate proposal submissions</strong> by providing a list of info on companies/organizations that will be willing to be a sponsor.</p> 
+            </div>
+        </div><br><br>
+
+        <div style="text-align: center; font-size:24px;">
+            📌<br>
+            From now onwards, I will only describe the scope of my part in this project. Namely, <strong>developing the "Allocate Tasks" feature</strong>. 
+        </div><br><br><br>
+
+        <h5 style="font-weight: 700;">User Journey Mapping</h5>
+        By keeping in mind the as-is system of 'Allocating Tasks', I made a user journey mapping on <strong>how organizers would allocate tasks to the volunteers through our app</strong>.
+        <img src="static/contribe/journey.png" class="center"><br><br><br>
+
+        <h5 style="font-weight: 700;">Wireframing & Prototyping</h5>
+        After analyzing our research results and specifying user requirements, I develop the wireframe and prototype on Figma. You can visit the prototype <a href="https://www.figma.com/file/2Rk2sH4mRuHqbgvesaQmiV/Prototype?node-id=172%3A1184" target="_blank" style="color: black;">here</a>. <br><br>
+        <img src="static/contribe/design.png" class="center"><br><br><br>
+
+        <h5 style="font-weight: 700;">Usability Testing</h5>
+        <p>We performed usability testing with 4 people that matches our user personas, whether they have experience as a 
+        volunteer or an activity organizer. Following the interview, we conduct quantitative evaluation by measuring each
+        feature's SUS score. <strong>The 'Allocating Tasks' feature receives an astounding average score of 96,25 out of 100</strong>.</p><br>
+        <div class="tab">
+            <strong style="color: #F84F45;">Potential Change:</strong> <strong>Remove the sorting filter. Instead, change it into a 'filter by date'</strong> so that attribute could be used more efficiently.
+        </div><br><br><br>
+
+        <h5 style="font-weight: 700;">Retrospective</h5>
+        I am beyond grateful to be a part of this project with all my fellow teammates, I couldn't have 
+        reach this far without them. Although this case is only fictitious, this opportunity has teached me many 
+        real invaluable lessons. I learned to utilize new tools, implemented UX methods I have only read about, 
+        and also done my first solo UT. Overall, I am proud of how this project turned out and excited for 
+        opportunities alike in the future.
+        
+    </div>
+    <hr>
+    <div class="project-list">
+        <!-- <h6 style="font-weight:600; font-size: 18px;">More You'd Like</h6><br> -->
+        <a href="index.html"><b>ALL</b></a>
+        <div>•</div>
+        <a class="active" href="contribe.html"><b>CONTRIBE</b></a>
+        <div>•</div>
+        <a href="latihid.html"><b>LATIHID</b></a>
+        <div>•</div>
+        <a href="maynooth.html"><b>MAYNOOTH.</b></a>
+    </div>
+    <hr> 
+    <footer>
+        <div class="contacts">
+            <a href="https://www.linkedin.com/in/nabilaayu/" target="_blank">LINKEDIN</a>
+            <div>•</div>
+            <a href="https://www.behance.net/nabilaayu" target="_blank">BEHANCE</a>
+        </div>
+        <div class="contacts">
+            <div>NABILADEWANTI@GMAIL.COM</div> 
+        </div><br><br>
+        <div>© 2021 Nabila Ayu Dewanti</div>
+    </footer>
+</body>
+</html>

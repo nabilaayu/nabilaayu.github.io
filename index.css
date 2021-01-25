@@ -1,9 +1,10 @@
 body {
-    font-family: futura-pt, sans-serif;
-    font-style: normal;
-    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    /* font-style: normal; */
+    font-weight:300;
     padding: 5% 7%;
     font-size: 18px;
+    color: #808080;
 }
 
 footer {
@@ -16,7 +17,7 @@ i {
     color: blue;
 }
 
-a .title {
+.title, .contacts, h1, h2, h3, h4, h5, h6, strong, b {
     color: black;
 }
 
@@ -176,6 +177,10 @@ p a {
     transform: scale(1.025);
 }
 
+.tab {
+    padding-left: 10%;
+}
+
 .title {
     font-size: 30px;
 }
@@ -329,6 +334,7 @@ p a {
 
     .content {
         width: 100%;
+        padding: 5% 0;
     }
 
     .content .column4 img {
