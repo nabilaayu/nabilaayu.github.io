@@ -121,9 +121,9 @@ p a {
     font-size: 13px;
 }
 
-.grid {
+/* .grid {
     padding-top: 5%;
-}
+} */
 
 .row {
     display: flex;
