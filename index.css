@@ -164,6 +164,13 @@ p a {
     text-align: left;
 }
 
+.column5 {
+    flex: 66.66%;
+    max-width: 66.66%;
+    padding: 0 12px;
+    text-align: left;
+}
+
 .column a {
     text-decoration: none;
 }
