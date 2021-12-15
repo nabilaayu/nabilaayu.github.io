@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="icon" href="static/favicon.png?v=4">
+    <title>Justika | Nabila Ayu Design</title>
+</head>
+
+<body>
+    <!-- [LIGHTBOX CONTAINER] -->
+    <div id="lb-back">
+        <div id="lb-img"></div>
+    </div>
+    <div id="nav" class="sticky-top">
+        <nav class="navbar navbar-light navbar-expand justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="static/logo.png" height="40" alt="">
+            </a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">WORKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Justika</h1>
+        <div style="color: #f1a20f; font-weight: 500;">App Login Improvement</div><br>
+        <img src="static/justika/hero.png" class="center"><br><br>
+
+        <h5 style="font-weight: 700;">Background</h5>
+        <p>Justika is an online legal consultation platform that's available on a website and mobile app. 
+            The Justika mobile app was still implementing a traditional flow of account registration/login, as opposed to 
+            their website which has already used passwordless authentication. Therefore, it is necessary to <strong>change 
+            the registration/login user flow on the app to passwordless so that it shortens the steps that the user needs to go 
+            through when using the app for the first time.</strong> Justika's mobile app login improvement was 
+            one of the projects I handled during my internship there.</p><br>
+        <img src="static/justika/brief.png" class="center"><br><br>
+
+        <h5 style="font-weight: 700;">Design Process</h5>
+        <p>Preceded with a project brief and followed by design review, then putting it to app development.</p>
+        <img src="static/justika/process.png" class="center"><br><br>
+
+        <h5 style="font-weight: 700;">Current User Journey</h5>
+        <p>To give more context, here is a the current registration/login user journey on the app.</p>
+        <img src="static/justika/current app.png" class="center"><br><br>
+
+        <h5 style="font-weight: 700;">Current Screens</h5>
+        <p>Before moving on, I did a little analysis of the current screens to pinpoint where else I could 
+            improve from the UI.</p><br>
+        <img src="static/justika/screens.png" class="center"><br><br><br>
+        
+        <h5 style="font-weight: 700;">😱 Engineering Limitation</h5>
+        <p>The possible trade-off I mentioned earlier turned out to be true. The OTP code that will be used in the app 
+            login will expire after only 3 minutes, in contrast to the 30 minutes expiration time of the web OTP 
+            code. I need to know how this shortened expiration time will affect the app's usability, 
+            thus leading me to my current hypothesis:</p>
+        <strong style="color: #f1a20f; font-size:medium;">Hypothesis #1</strong><br>
+        <strong>Clients need OTP expiration time more than 3 minutes to be able to register/login seamlessly and 
+            unhurriedly.</strong><br><br><br>
+
+        <h5 style="font-weight: 700;">Benchmarking</h5>
+        <p>To validate the hypothesis above and to discover current industry standards for passwordless authentication, 
+            I then did a benchmark with other apps that are implementing the same authentication flow.</p>
+        <img src="static/justika/benchmark.png" class="center"><br><br>
+
+        <div class="row">
+            <div class="column2">
+                <strong style="color: #f1a20f; font-size:medium;">Recommendation #1</strong>
+                <h6 style="font-weight: 700; font-size: 18px;">3 minutes OTP expiration time is okay</h6>
+            </div>
+            <div class="column2">
+                <p>Applications, on average, have an OTP expiration time from 2 up to 5 minutes. So, we can conclude that 
+                    3 minutes is not too short an expiration time, as long as the user has the option to resend the OTP 
+                    code.</p>
+                <p style="font-size: small;"><strong style="color: #f1a20f;">HMW</strong> inform users about the OTP 
+                    expiration time?</p>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="column2">
+                <strong style="color: #f1a20f; font-size:medium;">Recommendation #2</strong>
+                <h6 style="font-weight: 700; font-size: 18px;">Have a max limit of incorrect OTP input</h6>
+            </div>
+            <div class="column2">
+                <p>If the max limit is not applied, people with malicious intent can brute force until they find the 
+                    correct code. Most apps give 5 opportunities to input the OTP code.</p>
+                <p style="font-size: small;"><strong style="color: #f1a20f;">HMW</strong> handle users who have maxed 
+                    out on incorrect OTP inputs?</p>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="column2">
+                <strong style="color: #f1a20f; font-size:medium;">Recommendation #3</strong>
+                <h6 style="font-weight: 700; font-size: 18px;">Create a more user friendly welcome screen</h6>
+            </div>
+            <div class="column2">
+                <p>Most of the apps I benchmarked shows a welcoming illustration upon opening the app for the first time 
+                    and also provided a clear instruction copy on what to do.</p>
+                <p style="font-size: small;"><strong style="color: #f1a20f;">HMW</strong> make the welcome screen more 
+                    user friendly?</p> 
+            </div>
+        </div><br><br>
+
+        <h5 style="font-weight: 700;">How Might We</h5>
+        <p>Here, I tried to capture the opportunities presented from the recommendations I derived in the benchmarking step.</p><br>
+        <p><strong style="color: #f1a20f;">#1 HMW</strong> inform users about the OTP expiration time?</p> 
+        <ul style="font-size: small;">
+            <li>Put helper text on code verification page</li>
+            <li>Add expiration time information on the OTP email ✅</li>
+        </ul><br>
+        <p><strong style="color: #f1a20f;">#2 HMW</strong> handle users who have maxed out on incorrect OTP inputs?</p>
+        <ul style="font-size: small;">
+            <li>Show an inline error message ✅</li>
+            <li>Disable verification button, so users won't have other options but to resend the code in order to try again ✅</li>
+        </ul><br>
+        <p><strong style="color: #f1a20f;">#3 HMW</strong> make the welcome screen more user friendly?</p>
+        <ul style="font-size: small;">
+            <li>Add an illustration to freshen up the welcome screen ✅</li>
+            <li>Show a title that reflects clearly on what the email input is for ✅</li>
+        </ul><br><br>
+
+        <h5 style="font-weight: 700;">Wireframing & Prototyping</h5>
+        <p>After analyzing the opportunities while considering which would take the least effort, I then continued 
+            wireframing my ideas.</p>
+        <p style="font-size: small;"><strong style="color: #f1a20f;">Note:</strong> I'm only showing the positive flow to make it concise, but in reality, there were numerous negative flows defined in the making of the prototype.</p> 
+        <img src="static/justika/user journey.png" class="center"><br>
+        <img src="static/justika/wireframe.png" class="center"><br>
+        <p>There were a few changes and additions, but here is the final prototype:</p><br>
+        <img src="static/justika/prototype.png" class="center"><br><br>
+
+        <h5 style="font-weight: 700;">Learnings</h5>
+        <p>We then observe the implication of this improvement on the app and this is what we got:</p>
+        <div class="tab">
+            <h5 style="color: #33B630; font-weight: 700">42.6%</h5>
+            <p><strong>increase in login success rate</strong> shown a week after this improvement was released in production.</p>
+        </div>
+        
+    </div>
+    <hr>
+    <div class="project-list">
+        <!-- <h6 style="font-weight:600; font-size: 18px;">More You'd Like</h6><br> -->
+        <a href="index.html"><b>ALL</b></a>
+        <div>•</div>
+        <a class="active" href="justika.html"><b>JUSTIKA</b></a>
+        <div>•</div>
+        <a href="contribe.html"><b>CONTRIBE</b></a>
+        <div>•</div>
+        <a href="latihid.html"><b>LATIHID</b></a>
+    </div>
+    <hr> 
+    <footer>
+        <div class="contacts">
+            <a href="https://www.linkedin.com/in/nabilaayu/" target="_blank">LINKEDIN</a>
+            <div>•</div>
+            <a href="https://www.instagram.com/ui.nabila/" target="_blank">INSTAGRAM</a>
+            <div>•</div>
+            <a href="https://nabila-ayu.medium.com/" target="_blank">MEDIUM</a>
+        </div>
+        <div class="contacts">
+            <a href="mailto:nabiladewanti@gmail.com" target="_blank">NABILADEWANTI@GMAIL.COM</a> 
+        </div><br><br>
+        <div>© 2021 Nabila Ayu Dewanti</div>
+    </footer>
+</body>
+</html>
+    
