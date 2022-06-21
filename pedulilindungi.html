@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="icon" href="static/favicon.png?v=4">
+    <title>PeduliLindungi | Nabila Ayu Design</title>
+</head>
+
+<body>
+    <!-- [LIGHTBOX CONTAINER] -->
+    <div id="lb-back">
+        <div id="lb-img"></div>
+    </div>
+    <div id="nav" class="sticky-top">
+        <nav class="navbar navbar-light navbar-expand justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="static/logo.png" height="40" alt="">
+            </a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">WORKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>PeduliLindungi</h1>
+        <div style="color: #23ACDF; font-weight: 500;">Designing sustainable new features</div><br>
+        <img src="static/pedulilindungi/hero.png" class="center"><br><br>
+
+        <h5 style="font-weight: 700;">Background</h5>
+        <p>PeduliLindungi, Indonesia's COVID-19 digital contact tracing app, is crucial in reducing the spread of the 
+            virus during the pandemic. A lot of people have adopted the app, thus enabling it to potentially be the one 
+            healthcare platform in Indonesia.</p><br>
+        <img src="static/pedulilindungi/brief.png" class="center"><br><br>
+
+        <h5 style="font-weight: 700;">Project Outcome</h5>
+        <p>This is the system usability scale (SUS) score we got for the new features:</p>
+        <h5 style="color: #33B630; font-weight: 700">👍 78 / 100</h5>
+        <p>it means that the feature suggestion was <strong>"good"</strong> and <strong>"acceptable"</strong> for the users. 
+            The following process is how I achieved it and proposed the improvements based on it ✨</p>
+        <br><br>
+
+        <h5 style="font-weight: 700;">Design Process</h5>
+        <img src="static/pedulilindungi/process.png" class="center"><br><br>
+
+        <h5 style="font-weight: 700;">Current Screens</h5>
+        <p>To give more context, here is a glimpse of PeduliLindungi's current UI.</p><br>
+        <div class="row">
+            <div class="column2">
+                <img src="static/pedulilindungi/screens.png" class="center">
+            </div>
+            <div class="column2">
+                <p>
+                    The key features include:
+                    <ul>
+                        <li>Contact tracing with QR code and Bluetooth</li>
+                        <li>COVID-19 vaccination status</li>
+                        <li>COVID-19 test result</li>
+                        <li>eHAC integration</li>
+                        <li>Telemedicine</li>
+                        <li>Healthcare facility finder</li>
+                        <li>COVID-19 statistics</li>
+                    </ul>
+                </p>
+            </div>
+        </div><br>
+        <p>📌 The features mentioned above are heavily oriented towards handling COVID-19, which could become useless when 
+            the pandemic is no more. Hence, we need to first identify the user's needs so that PeduliLindungi could be 
+            more sustainable in the long run.</p><br><br>
+
+        <h5 style="font-weight: 700;">Understanding the Stakeholders</h5>
+        <p>While users have the highest priority, we also need to understand that they aren't the only 
+            stakeholders. The stakeholders that are a part of PeduliLindungi's ecosystem whose opinion we need to 
+            consider are:</p>
+        <img src="static/pedulilindungi/stakeholders.png" class="center"><br>
+        <p>In order to empathize with them, we went through two steps of process.</p><br>
+        <img src="static/pedulilindungi/understand steps.png" class="center"><br><br>
+        <!-- <p>We then collect the insights (information, issues, or suggestions) mentioned by both users and experts 
+            to mark them as relevant.</p><br>
+        <img src="static/pedulilindungi/relevant insights.png" class="center"><br><br> -->
+
+        <h5 style="font-weight: 700;">Identifying the Problems and Solutions</h5>
+        <p>Problems are identified from relevant insights gathered in the online survey and expert interview by 
+            considering their values and the scope of this research.</p><br>
+
+        <div class="row">
+            <div class="column2">
+                <strong style="color: #f1a20f; font-size:medium;">Problem #1</strong>
+                <h6 style="font-weight: 700; font-size: 18px;">People are getting ignorant about the impact and 
+                    development of the COVID-19 pandemic</h6>
+            </div>
+            <div class="column2">
+                <p>Although health information is one of the driving factor of PeduliLindungi's usage intention, users 
+                    no longer cared much about the benefits of the app or about the possibility of infection from COVID-19. 
+                    Besides that, users still have concerns about infecting others.</p>
+                <p style="font-size: small;"><strong style="color: #f1a20f;">Proposed solution:</strong> 
+                    Add a page or section containing official and relevant information about COVID-19 that is presented 
+                    in an attractive way.</p>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="column2">
+                <strong style="color: #f1a20f; font-size:medium;">Problem #2</strong>
+                <h6 style="font-weight: 700; font-size: 18px;">Queues in public places, especially at health facilities, can create crowds that are prone to the spread of COVID-19</h6>
+            </div>
+            <div class="column2">
+                <p>Users picked this as one of the top issues we should handle. Experts also believed that it was 
+                    important to implement remote queues at health facilities to prevent crowds.</p>
+                <p style="font-size: small;"><strong style="color: #f1a20f;">Proposed solution:</strong> 
+                    Add a remote queuing feature for health services, where users can monitor their queues through 
+                    the PeduliLindungi application.</p>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="column2">
+                <strong style="color: #f1a20f; font-size:medium;">Problem #3</strong>
+                <h6 style="font-weight: 700; font-size: 18px;">People are not aware of the health risks they have against COVID-19 based on their medical history</h6>
+            </div>
+            <div class="column2">
+                <p>Experts said that most people don't know their risk of COVID-19, especially people with comorbidity. 
+                    This is the main cause of complications from COVID-19. Having an awareness of their medical history 
+                    is also important to estimate health risks from other deseases.</p>
+                <p style="font-size: small;"><strong style="color: #f1a20f;">Proposed solution:</strong> 
+                    Add a medical record feature, where users can view and enter their medical history and get a health 
+                    risk assessment.</p>
+            </div>
+        </div><br><br>
+
+        <h5 style="font-weight: 700;">Value-effort Mapping</h5>
+        <p>Because of our limited resources, not all of the proposed solutions are able to be designed. Thus, we 
+            prioritize the feature suggestions based on its value to users and effort expended by organization.</p>
+        <img src="static/pedulilindungi/value-effort map.png" class="center"><br>
+        <p><strong>Health information feature and medical record feature are chosen to be designed in this study.</strong> 
+            We believe that those features could be highly beneficial for users even outside of the COVID-19 pandemic. On 
+            the other hand, the remote queuing feature was valued lower because its functionality would mostly be useful 
+            only during the pandemic.</p><br><br>
+
+        <h5 style="font-weight: 700;">Defining User Personas</h5>
+        <p>Based on the analysis of the online survey and expert interview results, two personas from 
+            PeduliLindungi users were obtained with two different characteristics.</p>
+        <img src="static/pedulilindungi/persona.png" class="center"><br>
+        <p>These user personas were kept in mind throughout the design development of the chosen feature suggestions. The 
+            health information feature would be tailored according to Persona 1, whereas the medical record feature would 
+            cater to Persona 2.</p>
+        <p style="font-size: small;"><strong style="color: #f1a20f;">Note:</strong> From here, <strong>I would only 
+            focus on the design process of the health information feature</strong> so it'll be easier to follow.</p><br><br>
+
+        <h5 style="font-weight: 700;">Brainstorming Opportunities</h5>
+        <p>After defining the user persona, we did a brainstorming session to present each of our ideas and explore the 
+            opportunities we could implement in the feature's UI/UX that would suit it. Here's a sneak peek of our 
+            brainstorming space:</p>
+        <img src="static/pedulilindungi/brainstorm.jpg" class="center"><br>
+        <p>During our brainstorming, we realized that health information could be classified into 2 types: news and 
+            educational. Each of those needed to be treated accordingly. Health news information is more urgent in 
+            delivery, so the design will prioritize discoverability aspects. On the other hand, health education 
+            information would emphasize clarity of information.</p>
+        <!-- <img src="static/pedulilindungi/hmw.jpg" class="center"><br><br> -->
+        <img src="static/pedulilindungi/user journey.png" class="center"><br><br>
+
+        <div class="row">
+            <div class="column2">
+                <strong style="color: #229BD8; font-size:medium;">Step #1</strong>
+                <h6 style="font-weight: 700; font-size: 18px;">Open PeduliLindungi</h6>
+            </div>
+            <div class="column2">
+                <p><strong style="color: #229BD8;">HMW</strong> improve the discoverability of the feature?</p>
+                <ul style="font-size: small;">
+                    <li>Add news sneak peek in QR scan result</li>
+                    <li>Show the news highlight in short chunks like instagram story</li>
+                </ul>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="column2">
+                <strong style="color: #229BD8; font-size:medium;">Step #2</strong>
+                <h6 style="font-weight: 700; font-size: 18px;">Find the health information he’s looking for</h6>
+            </div>
+            <div class="column2">
+                <p><strong style="color: #229BD8;">HMW</strong> help him find the info he needs?</p>
+                <ul style="font-size: small;">
+                    <li>Add filter, search bar, and categorization features to make finding information easier</li>
+                </ul>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="column2">
+                <strong style="color: #229BD8; font-size:medium;">Step #3</strong>
+                <h6 style="font-weight: 700; font-size: 18px;">Read about health information</h6>
+            </div>
+            <div class="column2">
+                <p><strong style="color: #229BD8;">HMW</strong> make the info section look interesting?</p>
+                <ul style="font-size: small;">
+                    <li>Highlight the important information inside education articles in diagrams, illustrations, etc</li>
+                </ul>
+            </div>
+        </div><br><br>
+
+        <h5 style="font-weight: 700;">Wireframing & Prototyping</h5>
+        <p>After exploring the opportunities we could implement on each step of the health information feature, we then proceed 
+            to make the rough outline in the form of a wireframe.</p>
+        <img src="static/pedulilindungi/wireframe.jpg" class="center"><br>
+        <p>There are some minor differences in the UI that were not shown in the wireframe, but nevertheless, the images 
+            below show the high-fidelity design of the new feature.</p><br>
+
+        <div class="row">
+            <div class="column2">
+                <img src="static/pedulilindungi/ui1.png" class="center"><br>
+                <p style="font-size: small;"><strong>Health headlines in the form of stories</strong> to support high discoverability and engagement</p><br>
+            </div>
+            <div class="column2">
+                <img src="static/pedulilindungi/ui2.png" class="center"><br>
+                <p style="font-size: small;">Each category of health headlines is <strong>curated from verified sources with digestible chunks of information</strong> and users can opt to view the full article if they want</p>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="column2">
+                <img src="static/pedulilindungi/ui5.png" class="center"><br>
+                <p style="font-size: small;"><strong>Health headline sneak peek</strong> is added to the QR scan result page to bump up its discoverability, since users mostly use that functionality in PeduliLindungi</p><br>
+            </div>
+            <div class="column2">
+                <img src="static/pedulilindungi/ui6.png" class="center"><br>
+                <p style="font-size: small;">Health education information is added in the new menu <strong>"Pusat Edukasi Kesehatan"</strong></p>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="column2">
+                <img src="static/pedulilindungi/ui3.png" class="center"><br>
+                <p style="font-size: small;">Pusat Edukasi Kesehatan has a clean interface with <strong>search bar and categorization</strong> to ease information finding</p><br>
+            </div>
+            <div class="column2">
+                <img src="static/pedulilindungi/ui4.png" class="center"><br>
+                <p style="font-size: small;"><strong>A fun and engaging article page</strong> that get users to absorb information better</p>
+            </div>
+        </div><br>
+    </div>
+    <hr>
+    <div class="project-list">
+        <!-- <h6 style="font-weight:600; font-size: 18px;">More You'd Like</h6><br> -->
+        <a href="index.html"><b>ALL</b></a>
+        <div>•</div>
+        <a class="active" href="pedulilindungi.html"><b>PEDULILINDUNGI</b></a>
+        <div>•</div>
+        <a href="justika.html"><b>JUSTIKA</b></a>
+        <div>•</div>
+        <a href="contribe.html"><b>CONTRIBE</b></a>
+    </div>
+    <hr> 
+    <footer>
+        <div class="contacts">
+            <a href="https://www.linkedin.com/in/nabilaayu/" target="_blank">LINKEDIN</a>
+            <div>•</div>
+            <a href="https://www.instagram.com/ui.nabila/" target="_blank">INSTAGRAM</a>
+            <div>•</div>
+            <a href="https://nabila-ayu.medium.com/" target="_blank">MEDIUM</a>
+        </div>
+        <div class="contacts">
+            <a href="mailto:nabiladewanti@gmail.com" target="_blank">NABILADEWANTI@GMAIL.COM</a> 
+        </div><br><br>
+        <div>© 2022 Nabila Ayu Dewanti</div>
+    </footer>
+</body>
+</html>
